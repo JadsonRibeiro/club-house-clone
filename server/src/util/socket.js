@@ -43,15 +43,6 @@ export default class SocketServer {
             }
         });
 
-        // const room = this.#io.of('/room');
-        // room.on('connection', socket => {
-        //     socket.emit('userConnection', 'socket id se conectou ' + socket.id);
-
-        //     socket.on('joinRoom', dados => {
-        //         console.log('dados recebidos', dados);
-        //     })
-        // })
-
         return new Promise((resolve, reject) => {
             server.on('error', reject);
 
