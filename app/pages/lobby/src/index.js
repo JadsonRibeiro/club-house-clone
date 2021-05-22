@@ -19,7 +19,9 @@ const dependencies = {
     view: View
 }
 
-await LobbyController.initialize(dependencies);
+await LobbyController.initialize(dependencies).catch(e => {
+    alert(e.message)
+})
 
 
 
