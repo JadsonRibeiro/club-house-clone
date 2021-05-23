@@ -119,7 +119,11 @@ export default class View {
     }
 
     static _redirectToLobby() {
-        window.location = constants.pages.lobby
+        window.location = constants.pages.lobby;
+    }
+
+    static redirectToLogin() {
+        window.location = constants.pages.login;
     }
 
     static configureLeaveButton() {

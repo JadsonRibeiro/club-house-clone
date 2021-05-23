@@ -1,17 +1,18 @@
 import constants from "../../_shared/constants.js";
+import UserDb from "../../_shared/userDb.js";
 import LobbyController from "./utils/controller.js";
 import LobbySocketBuilder from "./utils/lobbySocketBuilder.js";
 import View from "./utils/view.js";
+
+const user = UserDb.get();
+if(!Object.keys(user).length) {
+    View.redirectToLogin();
+}
 
 const socketBuilder = new LobbySocketBuilder({
     socketUrl: constants.socketUlr,
     namespace: constants.socketNamespaces.lobby
 });
-
-const user = {
-    img: 'https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png',
-    username: 'Jadson Ribeiro ' + Date.now()
-}
 
 const dependencies = {
     socketBuilder,
