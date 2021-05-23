@@ -1,22 +1,37 @@
 # ClubHouse Clone
 
-Aplicação desenvolvida durante a Semana JS Expert 4.0
+App developed on Semana JS Expert 4.0
+
+## Technologies
+
+- SocketIO
+- PeerJS
+- Firebase Auth
+
+## Learnings
+
+- Realtime aplication (Event driven)
+- Conexão de áudio peer to peer
+- Design Patterns
+- Autenticação
+- Sobrescrição de Classes nativas para adição de funcionalidades
+- Hospedagem de aplicações utilizando Heroku (client/server)
 
 ## Preview
 
-### Página de Login
+### Login
 
 <img src="https://github.com/ErickWendel/semanajsexpert-clubhouse-template/raw/main/assets/printscreen/clubhouse-login.PNG" width="300" alt="Login" />
 
-### Página de Salas
+### Lobby
 
 <img src="https://github.com/ErickWendel/semanajsexpert-clubhouse-template/raw/main/assets/printscreen/clubhouse-home.PNG" width="300" alt="Home" />
 
-### Página de Sala
+### Rooms
 
 <img src="https://github.com/ErickWendel/semanajsexpert-clubhouse-template/raw/main/assets/printscreen/clubhouse-room.PNG" width="300" alt="Room" />
 
-## Checklist Features
+## Features
 
 - [ ] O app deve funcionar na Web, Android e IOS
 - Login
